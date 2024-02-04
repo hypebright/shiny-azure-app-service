@@ -1,0 +1,30 @@
+name: Azure Container Registry
+
+on:
+  push:
+    branches:
+      main
+
+env:
+  IMAGE_NAME: shiny-azure-app-service
+
+jobs:
+  build:
+    name: Build container image
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Log into registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ secrets.ACR_ENDPOINT }}
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
+      - name: Build and push
+        uses: docker/build-push-action@v5
+        with:
+          push: true
+          tags: ${{ secrets.ACR_ENDPOINT }}/${{ env.IMAGE_NAME }}
+
+
