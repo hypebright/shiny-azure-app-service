@@ -19,3 +19,7 @@ There are costs involved with setting up the Azure Container Registry. You pay p
 
 In 10 minutes, I will walk you through all the steps to deploy the Hangman app. You can watch "Deploying Your Shiny Application to Azure App Service" on YouTube 🚀.
 
+# Plumber API to Azure App Service
+
+Not looking to have your Shiny app deployed, but an R Plumber API? You can do that in a very similar manner too! Check out this article on [how to deploy a Plumber API to Azure App Service](https://veerlevanleemput.medium.com/hosting-a-r-plumber-api-using-azure-app-service-4e78936787cf), and this follow-up article on [how to add authentication to your (Plumber) API](https://veerlevanleemput.medium.com/adding-authentication-to-an-api-on-azure-app-service-f7a3770986f).
+
