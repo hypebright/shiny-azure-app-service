@@ -21,7 +21,7 @@ There are costs involved with setting up the Azure Container Registry. You pay p
 
 # Watch this tutorial on YouTube
 
-In 10 minutes, I will walk you through all the steps to deploy the Hangman app. You can watch ["Deploying Your Shiny Application to Azure App Service"](https://youtu.be/Phnihe6cBgE) on YouTube 🚀 (February 14, 13:00 CET).
+In 10 minutes, I will walk you through all the steps to deploy the Hangman app. You can watch ["Deploying Your Shiny Application to Azure App Service"](https://youtu.be/Phnihe6cBgE) on YouTube 🚀 (February 13, 13:00 CET).
 
 # Plumber API to Azure App Service
 
