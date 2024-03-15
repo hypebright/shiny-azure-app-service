@@ -19,7 +19,7 @@ ui <- fluidPage(
     titlePanel("Hangman Game"),
     # logout button
     tags$a(
-      href = "/.auth/logout?post_logout_redirect_uri=/logout.html",
+      href = "/.auth/logout?post_logout_redirect_uri=/",
       tags$i(class = "fa fa-sign-out", style = "font-size: 20px; color: #000000; margin-right: 10px;"),
     )
   ),
