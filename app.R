@@ -51,11 +51,15 @@ ui <- fluidPage(
 server <- function(input, output, session) {
   
   observe({
-    if(is.null(input$AzureAuth) || input$AzureAuth == "") {
+    
+    req(input$AzureAuth)
+    
+    if (input$AzureAuth == "unauthorized") {
       showNotification("Hey there 👋", duration = 5, type = "message")
     } else {
       showNotification(paste0("Hey ", input$AzureAuth$name, " 👋"), duration = 5, type = "message")
     }
+    
   })
   
   # Initialize game state
