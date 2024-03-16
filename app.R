@@ -54,7 +54,7 @@ server <- function(input, output, session) {
     
     req(input$AzureAuth)
     
-    if (input$AzureAuth$name == "unauthorized") {
+    if (input$AzureAuth$name == "unknown") {
       showNotification("Hey there 👋", duration = 5, type = "message")
     } else {
       showNotification(paste0("Hey ", input$AzureAuth$name, " 👋"), duration = 5, type = "message")
