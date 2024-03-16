@@ -19,7 +19,12 @@ $(document).ready(function () {
           
       }).fail(function () {
           console.log("Error retrieving user data from Entra ID: defaulting to 'unauthorized'.");
-          Shiny.setInputValue("AzureAuth", "unauthorized");
+          const userData = {
+              name: "unauthorized",
+              preferred_username: "unauthorized",
+              user_id: "unauthorized"
+          };
+          Shiny.setInputValue("AzureAuth", userData);
       });
     });
 });
