@@ -11,6 +11,8 @@ The Docker image will be stored in [Azure Container Registry](https://azure.micr
 
 This project uses [renv](https://rstudio.github.io/renv/index.html) and will use the `renv.lock` file to install the necessary R packages in the container.
 
+In the app, you will also see a logout button and a script, called `auth.js`, that works in combination with [Entra ID](https://www.microsoft.com/en-us/security/business/microsoft-entra). You can make use of the built-in authentication and authorization capabilities of Azure App Service to make this happen. See you YouTube tutorials section for more information about adding authentication to Azure App Service.
+
 ## Costs
 
 There are costs involved with setting up the Azure Container Registry. You pay per day for storage, and you pay per second for build time 💰. With the lowest tier this will result in approximately 5 USD per month, depending on your set region and your build times. Azure App Service has a free tier (F1), which allows 60 CPU-minutes per day and 1GB RAM, and 1GB storage. The first basic App Service tier (B1) starts from 0,018 USD per hour. You can get more information about pricing [here](https://azure.microsoft.com/nl-nl/pricing/details/app-service/linux/).
@@ -19,9 +21,10 @@ There are costs involved with setting up the Azure Container Registry. You pay p
 
 ⚠️ Note that another option is to use Azure Container Apps, which has a different pricing model and a slightly different aim. I've chosen Azure App Service here because I've worked with it before, but do your research before you pick something!
 
-# Watch this tutorial on YouTube
+# Watch tutorials on YouTube
 
-In 10 minutes, I will walk you through all the steps to deploy the Hangman app. You can watch ["Deploying Your Shiny Application to Azure App Service"](https://youtu.be/Phnihe6cBgE) on YouTube 🚀 (February 13, 13:00 CET).
+1️⃣  ["Deploying Your Shiny Application to Azure App Service"](https://youtu.be/Phnihe6cBgE)
+2️⃣  ["Adding Authentication to Azure App Service"](https://youtu.be/2vZDTIb6KWc)
 
 # Plumber API to Azure App Service
 
